@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Barlow Condensed;
+    background-color: #3E3E3E;
+
+    .section {
+
+        display: block; //! Changes the component element from inline to block
+
+        //* Selects an element based on its position among siblings of the same tag type
+        // p:nth-of-type(2) {}
+
+        //* Selects an element based on its position among all siblings
+        // p:nth-child(2) {}
+
+        &:nth-child(odd) {
+            background-color: #3E3E3E;
+        }
+
+        &:nth-child(even) {
+            background-color: #73281A;
+        }
+    }
+}

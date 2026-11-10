@@ -1,0 +1,41 @@
+#Book_Now {
+
+    .content {
+        form {
+            width: 500px;
+            margin: auto;
+
+            .input {
+                label {
+                    margin-bottom: 15px;
+                    color: #ffffff;
+                    font-weight: 300;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-bottom: 30px;
+                }
+
+                textarea {
+                    height: 160px;
+                    resize: none;
+                }
+            }
+
+            button {
+                border: 1px solid white;
+                padding: 10px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 25px;
+                letter-spacing: 1.5px;
+            }
+
+        }
+    }
+}

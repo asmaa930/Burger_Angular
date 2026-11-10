@@ -1,0 +1,22 @@
+header {
+    // fallback
+    height: 100vh;
+    height: 100dvh;
+
+    position: relative;
+
+    .content {
+
+        h1 {
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+        }
+    }
+}
