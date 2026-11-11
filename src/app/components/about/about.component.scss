@@ -1,3 +1,6 @@
+// @use "abstracts/" as *;
+@use "../../../abstracts" as *;
+
 #About {
     h2 {
         font-weight: 400;
@@ -8,8 +11,28 @@
         line-height: 30px;
         font-weight: 300;
 
+        @include respond(350) {
+            letter-spacing: 1px;
+            line-height: 26px;
+        }
+
+        @include respond(650) {
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
+
+        @include respond(850) {
+            letter-spacing: 1px;
+            line-height: 26px;
+        }
+
+        @include respond(1050) {
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
+
         span {
-            background: #FF894F;
+            background: $thirdColor;
             color: #000;
             font-weight: 400;
         }

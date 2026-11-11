@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use "abstracts/" as *;
+
 body {
     font-family: Barlow Condensed;
     background-color: #3E3E3E;
@@ -15,11 +17,13 @@ body {
         // p:nth-child(2) {}
 
         &:nth-child(odd) {
-            background-color: #3E3E3E;
+            background: $firstColor;
         }
 
         &:nth-child(even) {
-            background-color: #73281A;
+            background: $secondColor;
         }
+
+
     }
 }

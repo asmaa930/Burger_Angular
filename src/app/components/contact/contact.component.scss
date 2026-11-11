@@ -1,14 +1,27 @@
-#Book_Now {
+@use "../../../abstracts" as *;
 
+#Book_Now {
     .content {
         form {
-            width: 500px;
+            max-width: 500px;
             margin: auto;
+
+
+            @include respond(350) {
+                max-width: 350px;
+            }
+
+            @include respond(650) {
+                max-width: 450px;
+            }
+
+            @include respond(850) {
+                max-width: 500px;
+            }
 
             .input {
                 label {
-                    margin-bottom: 15px;
-                    color: #ffffff;
+                    color: #fff;
                     font-weight: 300;
                 }
 
@@ -28,7 +41,7 @@
             }
 
             button {
-                border: 1px solid white;
+                border: 1px solid #fff;
                 padding: 10px;
                 color: #fff;
                 font-weight: 600;
